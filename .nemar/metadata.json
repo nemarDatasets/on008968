@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "dataset_id": "on008968",
+  "source": "openneuro",
+  "source_id": "ds008968",
+  "title": "Spell-IT-Out",
+  "authors": {
+    "Tommaso Cortecchia": {},
+    "Stefano Tortora": {},
+    "Jeff Kiesner": {},
+    "Emanuele Menegatti": {},
+    "Luca Tonin": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds008968.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.11.1",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "acknowledgements": "This publication is part of the project PNRR-NGEU which has received funding from the MUR–DM 118/2023"
+}
