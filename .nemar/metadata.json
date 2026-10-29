@@ -1,11 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "dataset_id": "on008968",
+  "source": "openneuro",
+  "source_id": "ds008968",
   "title": "Spell-IT-Out",
-  "description": "Spell-IT-Out is an EEG dataset from 25 native Italian speakers who listened to sentences, repeated them, and then produced them syllable by syllable at a fixed pace. Production was either overt (spoken aloud) or covert (imagined without movement). Recordings used 61 EEG channels and 1 EOG channel at 2048 Hz. Hand-corrected word and syllable timings from the overt speech are provided as events. Cleaned continuous EEG and syllable epochs for machine learning are included as derivatives.",
-  "methods_description": "EEG was recorded with a 64-channel ANT Neuro waveguard cap and eego sports amplifier at 2048 Hz (reference CPz, ground AFz), with one EOG electrode. Each participant completed 3 overt runs followed by 3 covert runs of 20 trials each. Overt speech was recorded by microphone, segmented with Silero-VAD, aligned with the Montreal Forced Aligner, and corrected by hand in Praat.",
-  "license": "CC0",
-  "dataset_type": "raw",
   "authors": {
     "Tommaso Cortecchia": {},
     "Stefano Tortora": {},
@@ -13,79 +11,22 @@
     "Emanuele Menegatti": {},
     "Luca Tonin": {}
   },
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "imagined speech"
-    },
-    {
-      "term": "speech production"
-    },
-    {
-      "term": "syllabification"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "Italian language"
-    }
-  ],
+  "license": "CC0",
+  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds008968.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on008968",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on008968",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "10.1038/s41597-019-0104-8",
-      "identifier_type": "DOI",
-      "relation_type": "References"
     }
   ],
-  "funding_references": [
-    {
-      "funder_name": "MUR",
-      "award_title": "PNRR-NGEU, MUR–DM 118/2023"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "resource_type_specific": "EEG Dataset",
-  "modalities": [
+  "pipeline_stage": "seeded",
+  "bids_version": "1.11.1",
+  "recording_modality": [
     "eeg"
   ],
-  "sizes": [
-    "70.82 GB (1017 files)"
+  "datatypes": [
+    "eeg"
   ],
-  "formats": [
-    ".TextGrid",
-    ".bidsignore",
-    ".eeg",
-    ".h5",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".wav",
-    ".yml"
-  ],
-  "source_hash": "ade58a4bbf1dd00b86af5f483827e415e47dd743f9ca7fc9a9f8db3bddf253a5"
+  "acknowledgements": "This publication is part of the project PNRR-NGEU which has received funding from the MUR–DM 118/2023"
 }
