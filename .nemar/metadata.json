@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Spell-IT-Out",
+  "description": "Spell-IT-Out is an EEG dataset of 25 native Italian speakers who listened to sentences, repeated them, and then produced them syllable by syllable at a fixed pace, either aloud (overt) or silently (covert). Each participant completed 3 overt and 3 covert runs of 20 trials. Recordings used 61 EEG channels plus 1 EOG channel at 2048 Hz. Hand-corrected word and syllable timings of overt speech are provided as events, and derivatives include preprocessed continuous EEG and syllable epochs for machine learning.",
+  "methods_description": "EEG was recorded with a 64-channel ANT Neuro waveguard cap and eego sports amplifier at 2048 Hz (reference CPz, ground AFz, impedances below 10 kΩ), with an EOG electrode below the left eye. Data were acquired with ROS-Neuro in an electrically shielded, acoustically isolated room. Overt speech was recorded by microphone and segmented with Silero-VAD. It was aligned with the Montreal Forced Aligner and corrected manually in Praat at sentence, word and syllable level.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,30 @@
     "Emanuele Menegatti": {},
     "Luca Tonin": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds008968.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "speech production"
+    },
+    {
+      "term": "imagined speech"
+    },
+    {
+      "term": "syllabification"
+    },
+    {
+      "term": "overt speech"
+    },
+    {
+      "term": "covert speech"
+    },
+    {
+      "term": "brain-computer interface"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on008968",
       "identifier_type": "URL",
@@ -36,13 +56,24 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds008968.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "MUR",
+      "award_title": "PNRR-NGEU, MUR–DM 118/2023"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "70.82 GB (1017 files)"
   ],
@@ -59,33 +90,5 @@
     ".wav",
     ".yml"
   ],
-  "description": "Spell-IT-Out is an EEG dataset recorded from 25 native Italian speakers who listened to sentences, repeated them, and then produced them syllable by syllable at a fixed pace. Production was either overt (spoken aloud) or covert (imagined without movement). The dataset contains 61 EEG channels and 1 EOG channel at 2048 Hz, with hand-corrected word and syllable timing for the overt speech released as events. It supports research on speech production, imagined speech decoding and brain-computer interfaces.",
-  "methods_description": "EEG was acquired with an ANT Neuro waveguard 64-channel Ag/AgCl cap and an eego sports amplifier at 2048 Hz (reference CPz, ground AFz) in a shielded, acoustically isolated room. Each participant completed 3 overt runs followed by 3 covert runs of 20 sentence trials. Each trial had fixation, listening, repetition and syllabification phases. Overt speech was recorded by microphone, segmented with Silero-VAD, aligned with the Montreal Forced Aligner, and corrected manually in Praat.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "imagined speech"
-    },
-    {
-      "term": "speech production"
-    },
-    {
-      "term": "syllabification"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "covert speech"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "MUR",
-      "award_title": "PNRR-NGEU, MUR–DM 118/2023"
-    }
-  ],
-  "source_hash": "ade58a4bbf1dd00b86af5f483827e415e47dd743f9ca7fc9a9f8db3bddf253a5"
+  "source_hash": "7201e9b07661c3ae1063ba447f635e924eee65e0a1d05d8b75edcee678256782"
 }
