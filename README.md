@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on008968-blue)](https://doi.org/10.82901/nemar.on008968)
+
 # Spell-IT-OUT
 
 EEG recorded while native Italian speakers listened to sentences, repeated
